@@ -1,15 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import pandas as pd
 import copy
-
-
-# In[14]:
-
 
 path_list = []
 for i in range(10,21,2):
@@ -43,10 +33,6 @@ for j in path_list:
     d = pd.concat([last_row,a])
     d.to_csv(j[12:-4]+".csv",index=False,encoding='utf-8-sig')
         #导出为csv
-
-
-# In[ ]:
-
 
 
 
